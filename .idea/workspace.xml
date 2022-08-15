@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bbd2fb0-844e-4663-bd4c-aaf21c037501" name="Changes" comment="" />
+    <list default="true" id="5bbd2fb0-844e-4663-bd4c-aaf21c037501" name="Changes" comment="First commit &amp; push">
+      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/playground.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/sample tkinter funcs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/27 - Tkinter/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/Mile to KM converter.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,10 +20,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2CyeTadWnoDGbwNOetu0ggeQ1rc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,7 +36,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GraemeSimpson/PycharmProjects/26 - Comprehensions&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GraemeSimpson/PycharmProjects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -79,6 +90,40 @@
       <option name="presentableId" value="Default" />
       <updated>1659779261003</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit &amp; push">
+      <created>1660313800125</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660313800126</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit &amp; push" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit &amp; push" />
   </component>
 </project>
