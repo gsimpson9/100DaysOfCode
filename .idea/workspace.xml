@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bbd2fb0-844e-4663-bd4c-aaf21c037501" name="Changes" comment="First commit &amp; push">
-      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/playground.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/sample tkinter funcs.py" afterDir="false" />
+    <list default="true" id="5bbd2fb0-844e-4663-bd4c-aaf21c037501" name="Changes" comment="day 28">
+      <change afterPath="$PROJECT_DIR$/29 - Password Generator Program/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/29 - Password Generator Program/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/27 - Tkinter/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/27 - Tkinter and args kwargs/Mile to KM converter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/GraemeSimpson/PycharmProjects&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;FeaturesTrainerSettingsPanel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -46,11 +44,11 @@
       <recent name="C:\Users\GraemeSimpson\PycharmProjects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GraemeSimpson\PycharmProjects\5 - for loop" />
+      <recent name="C:\Users\GraemeSimpson\PycharmProjects\29 - Password Generator Program" />
+      <recent name="C:\Users\GraemeSimpson\PycharmProjects\28 - Pomodo Technqiue Timer" />
       <recent name="C:\Users\GraemeSimpson\PycharmProjects\26 - Comprehensions" />
       <recent name="C:\Users\GraemeSimpson\PycharmProjects\25 - CSV with Pandas" />
-      <recent name="C:\Users\GraemeSimpson\PycharmProjects\25 - CSV with Pandas\central park squirrels census" />
-      <recent name="C:\Users\GraemeSimpson\PycharmProjects\25 - CSV with Pandas\intro" />
-      <recent name="C:\Users\GraemeSimpson\PycharmProjects" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,7 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1660313800126</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day 27 complete">
+      <created>1660570178116</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660570178116</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day 28">
+      <created>1660577894483</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660577894483</updated>
+    </task>
+    <task id="LOCAL-00004" summary="day 28">
+      <created>1660578070700</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660578070700</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -124,6 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit &amp; push" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit &amp; push" />
+    <MESSAGE value="day 27 complete" />
+    <MESSAGE value="day 28" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 28" />
   </component>
 </project>
