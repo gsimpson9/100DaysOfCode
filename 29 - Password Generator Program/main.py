@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 from random import choice, randint, shuffle
 import pyperclip
+import json
 
 # Please enter your email into the code before running
 email = 'test@outlook.com'
@@ -30,21 +31,67 @@ def generate_password():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
-    website = website_input.get()
+    website = website_input.get().title()
     user_email = email_input.get()
     pw = pw_input.get()
+    new_data = {
+        website: {
+            'email': user_email,
+            'password': pw
+        }
+    }
 
     if len(website) == 0 or len(pw) == 0:
         messagebox.showinfo(title='Oops', message="Please don't leave any empty fields")
     else:
         is_ok = messagebox.askokcancel(title=website,
-                                       message=f"These are the details entered: \nEmail: {user_email}"
+                                       message=f"Email: {user_email}"
                                                f"\nPassword: {pw}\nIs it ok to save?")
         if is_ok:
-            with open('data.txt', 'a') as data_file:
-                data_file.write(f'{website} | {user_email} | {pw}\n')
+            try:
+                with open('data.json', 'r') as data_file:
+                    # Reading old data
+                    data = json.load(data_file)
+            except FileNotFoundError:
+                with open('data.json', 'w') as data_file:
+                    # Saving updated data
+                    json.dump(new_data, data_file, indent=4)
+            else:
+                # Updating old data with new data
+                data.update(new_data)
+
+                with open('data.json', 'w') as data_file:
+                    # Saving updated data
+                    json.dump(data, data_file, indent=4)
+                messagebox.showinfo(title='Saved', message=f"Your credentials for {website}"
+                                                           f" have been saved successfully")
+            finally:
                 website_input.delete(0, END)
                 pw_input.delete(0, END)
+
+
+# ---------------------------- FIND PASSWORD ------------------------------- #
+def find_password():
+    website = website_input.get().title()
+    user_email = email_input.get()
+    pw = pw_input.get()
+    try:
+        with open('data.json', 'r') as data_file:
+            # Reading old data
+            data = json.load(data_file)
+            if website in data:
+                messagebox.showinfo(title='Login credentials',
+                                    message=f"Your login credentials for {website.title()} are:"
+                                            f"\nUsername: {data[website]['email']}"
+                                            f"\nPassword: {data[website]['password']}")
+            else:
+                messagebox.showinfo(title='Login credentials',
+                                    message=f'There are no login credentials for "{website}"'
+                                            f' currently saved.')
+    except FileNotFoundError:
+        messagebox.showinfo(title='Login credentials',
+                            message=f'No data file found.\nPlease submit at least one entry'
+                                    f' before searching.')
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -67,7 +114,7 @@ pw_label = Label(text="Password:")
 pw_label.grid(column=0, row=3, sticky='e')
 
 # Entries
-website_input = Entry(width=25)
+website_input = Entry(width=21)
 website_input.grid(column=1, row=1, columnspan=2, sticky="EW")
 website_input.focus()
 email_input = Entry(width=25)
@@ -79,6 +126,8 @@ pw_input.grid(column=1, row=3, sticky="EW")
 # Buttons
 generate_pw = Button(text="Generate Password", command=generate_password)
 generate_pw.grid(column=2, row=3, sticky="EW")
+search = Button(text="Search", command=find_password)
+search.grid(column=2, row=1, sticky="EW")
 add = Button(text="Add", width=43, command=save)
 add.grid(column=1, row=4, columnspan=2, sticky="EW")
 
