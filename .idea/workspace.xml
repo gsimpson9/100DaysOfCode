@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36364b6d-e888-41f2-b663-1f9b83e592af" name="Changes" comment="day 32">
-      <change afterPath="$PROJECT_DIR$/33 - APIs/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PycharmProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PycharmProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="36364b6d-e888-41f2-b663-1f9b83e592af" name="Changes" comment="day 33">
+      <change afterPath="$PROJECT_DIR$/34 - API Quiz App/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/34 - API Quiz App/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/34 - API Quiz App/question_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/34 - API Quiz App/quiz_brain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/34 - API Quiz App/ui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\GraemeSimpson\PycharmProjects\34 - API Quiz App" />
+      <recent name="C:\Users\GraemeSimpson\PycharmProjects\33 - APIs\ISS Email" />
       <recent name="C:\Users\GraemeSimpson\PycharmProjects\33 - APIs" />
       <recent name="C:\Users\GraemeSimpson\PycharmProjects\32 - Automated emails" />
       <recent name="C:\Users\GraemeSimpson\PycharmProjects\32 - Automated emails " />
@@ -69,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660838514577</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="day 33">
+      <created>1661185706413</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661185706413</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day 32" />
-    <option name="LAST_COMMIT_MESSAGE" value="day 32" />
+    <MESSAGE value="day 33" />
+    <option name="LAST_COMMIT_MESSAGE" value="day 33" />
   </component>
 </project>
