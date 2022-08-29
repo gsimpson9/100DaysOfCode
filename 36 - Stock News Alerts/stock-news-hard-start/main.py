@@ -45,7 +45,7 @@ if prctg_difference >0:
 else:
     up_down = "⬇️"
 
-if prctg_difference > 5 or prctg_difference < -5:
+if abs(prctg_difference) > 5:
     top_articles = response2.json()['articles'][:NUMBER_OF_ARTICLES]
     for article in top_articles:
         account_sid = constants.account_sid
