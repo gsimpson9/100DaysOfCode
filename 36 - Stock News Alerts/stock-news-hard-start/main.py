@@ -23,7 +23,8 @@ stock_params = {
 }
 response = requests.get(url=STOCK_ENDPOINT, params=stock_params)
 response.raise_for_status()
-
+data = response.json()["Time Series (Daily)"]
+stock_list = [value for (key, value) in data.items()]
 # News API request
 news_params = {
     "q": "\"Tesla\"",
@@ -36,11 +37,12 @@ response2 = requests.get(url=NEWS_ENDPOINT, params=news_params, headers=headers)
 response2.raise_for_status()
 
 # Program logic
-yesterday_close = float(response.json()["Time Series (Daily)"][yesterdays_date]["4. close"])
-two_days_ago_close = float(response.json()["Time Series (Daily)"][two_days_ago_date]["4. close"])
+yesterday_close = float(stock_list[0]["4. close"])
+two_days_ago_close = float(stock_list[1]["4. close"])
 prctg_difference = round((yesterday_close - two_days_ago_close) / yesterday_close * 100, 4)
+
 up_down = None
-if prctg_difference >0:
+if prctg_difference > 0:
     up_down = "⬆️"
 else:
     up_down = "⬇️"
